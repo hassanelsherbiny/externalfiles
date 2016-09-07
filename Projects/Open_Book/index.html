@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Open Book - Hassan Elsherbiny - Developer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/hover-min.css" />
+    <link rel="stylesheet" href="/assets/css/responsiveslides.css" />
+</head>
+<body>
+
+<!-- Wrapper -->
+<a href="/"><i class="fa fa-reply" aria-hidden="true"></i> Back</a>
+    <div id="MainContainer" class="MainContainer">
+
+        <div class="head">
+            <div style="display: inline-block; width: 10%">
+               <img src="/images/Openbook.png" alt="Open Book Hassan Elsherbiny - Developer"/>
+            </div>
+            <div style="display: inline-block;width: 60%">
+                <h1>Open Book</h1>
+                <!--class="img imgleft"-->
+                <!--class="img imgright"-->
+
+                <h5>Online E-Book Library And BookStore</h5>
+            </div>
+            <div style="display: inline-block; width: 10%">
+               <img src="/images/Openbook.png" alt="Open Book Hassan Elsherbiny - Developer"/>
+            </div>
+            <div>
+                Open Book is a WebSite For Displaying Books Organized By It's Category Or It's Authors. 
+				
+				<br>
+				The Site Is Used As E-Commerece Site For Selling Books And Adding Information About The Store.
+				<br>
+				Site Has Two Actors : The Admin And The User.
+				<br>
+				Login Or Register New Account.
+				<br>
+				User Can Browse All Aviable Books And Order Any Of them If it Has Paper Version.
+				<br>
+				User Can Search for All Aviable Books ,Categories Or Authors By Containg Letters.
+				<br>
+				Can Also Request Books Which Doesn't Exist On The Site.
+				<br>
+				Admin : Add / Edit / Delete Authors , Categories ,Books And Download Links For each Book And Prices For Paperbook version.
+				<br>
+				View All Requests And Orders.
+				<br>
+				Orders And Requests Are Delivered To Admin Giving an Imediate Alert (With help Of SignalR And JQuery).
+				<br>
+				Books, authors ,Categories , Store Information Are All Organized And built According To Special Schemas Of <a href="Https://schema.org" target="_blank"> Schema.Org </a>
+			
+            </div>
+        </div>
+
+        <div style="clear: both;height: 10px"></div>
+        <div class="sliderContainer">
+            <h1>ScreenShots</h1>
+            <ul class="rslides">
+              <li><img src='images/Open_Book-Hassan-Elsherbiny1.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny2.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny3.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny4.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny5.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny6.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny7.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny8.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny9.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny10.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny11.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny12.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny13.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+<li><img src='images/Open_Book-Hassan-Elsherbiny14.png' alt='Open_Book-Hassan-Elsherbiny'></li>
+
+            </ul>
+            <div style="clear: both;height: 10px"></div>
+        </div>
+    </div>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.poptrox.min.js"></script>
+    <script src="/assets/js/skel.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/responsiveslides.js"></script>
+    <script>
+        $(function () {
+            $(".rslides").responsiveSlides({
+                prevText: "&lt",
+                nextText: "&gt",
+                nav: true
+
+            });
+        });
+    </script>
+    <!-- Scripts -->
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.skillbar').each(function () {
+                jQuery(this).find('.skillbar-bar').animate({
+                    width: jQuery(this).attr('data-percent')
+                }, 6000);
+            });
+        });
+    </script>
+</body>
+</html>

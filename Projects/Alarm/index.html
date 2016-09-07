@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Alarm - Hassan Elsherbiny - Developer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/hover-min.css" />
+    <link rel="stylesheet" href="/assets/css/responsiveslides.css" />
+</head>
+<body>
+
+<!-- Wrapper -->
+<a href="/"><i class="fa fa-reply" aria-hidden="true"></i> Back</a>
+    <div id="MainContainer" class="MainContainer">
+
+        <div class="head">
+            <div style="display: inline-block; width: 10%">
+                <img src="images/avatar.jpg" />
+            </div>
+            <div style="display: inline-block;width: 60%">
+                <h1>Header</h1>
+                <!--class="img imgleft"-->
+                <!--class="img imgright"-->
+
+                <h5>Description</h5>
+            </div>
+            <div style="display: inline-block; width: 10%">
+                <img src="images/avatar.jpg"/>
+            </div>
+            <div>
+                Details and specifications
+            </div>
+        </div>
+
+        <div style="clear: both;height: 10px"></div>
+        <div class="sliderContainer">
+            <h1>ScreenShots</h1>
+            <ul class="rslides">
+<li><img src='images/Alarm-Hassan-Elsherbiny1.png' alt='Alarm-Hassan-Elsherbiny'></li>
+<li><img src='images/Alarm-Hassan-Elsherbiny2.png' alt='Alarm-Hassan-Elsherbiny'></li>
+<li><img src='images/Alarm-Hassan-Elsherbiny3.png' alt='Alarm-Hassan-Elsherbiny'></li>
+
+            </ul>
+            <div style="clear: both;height: 10px"></div>
+        </div>
+    </div>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.poptrox.min.js"></script>
+    <script src="/assets/js/skel.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/responsiveslides.js"></script>
+    <script>
+        $(function () {
+            $(".rslides").responsiveSlides({
+                prevText: "&lt",
+                nextText: "&gt",
+                nav: true
+
+            });
+        });
+    </script>
+    <!-- Scripts -->
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.skillbar').each(function () {
+                jQuery(this).find('.skillbar-bar').animate({
+                    width: jQuery(this).attr('data-percent')
+                }, 6000);
+            });
+        });
+    </script>
+</body>
+</html>
