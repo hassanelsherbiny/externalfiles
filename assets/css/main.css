@@ -1,6 +1,6 @@
 ﻿@charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
 
 /*
 	Visualize by TEMPLATED
@@ -129,7 +129,11 @@ body {
 .MainContainer {
     text-align: center;
 }
-
+.title{
+	font-family: 'Tangerine', serif;
+   
+    font-size: 65px;
+}
 #main h1,#main h2 {
     text-align: center;
 }
@@ -214,10 +218,13 @@ body {
 #About {
     line-height: 40px;
 }
-
+#About h1{
+	 
+}
 #RoundedSec h1 {
+font-family: 'Tangerine', serif;
     text-align: center;
-    text-decoration: underline;
+   
     font-style: italic;
 }
 
@@ -1572,6 +1579,7 @@ body {
 
     html, body {
         min-width: 320px;
+		
     }
 }
 
@@ -1580,6 +1588,7 @@ body {
     background-image: url("../../images/bg.jpg");
     background-size: cover;
     background-position: top center;
+	font-family:Fertigo;
 }
 
     body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1597,7 +1606,7 @@ body {
 
 body, input, select, textarea {
     color: rgba(255, 255, 255, 0.65);
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family:Fertigo;
     font-size: 13pt;
     font-weight: 200;
     line-height: 1.65;
