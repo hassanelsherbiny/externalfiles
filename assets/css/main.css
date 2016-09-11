@@ -192,10 +192,7 @@ body {
     position: absolute;
 }
 
-.rslides img {
-    height: 500px !important;
-    width: 100%;
-}
+
 
 .rslides1_nav:hover {
     background-color: #848080;
