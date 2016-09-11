@@ -49,6 +49,18 @@ body {
     -webkit-text-size-adjust: none;
 }
 
+
+#Tools {
+    text-align: center;
+}
+#Tools img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+#Tools p {
+    font-size: 15px;
+}
 /* Bar */
 
 .skillbar {
@@ -216,6 +228,7 @@ body {
 }
 
 #About {
+        font-family: Fertigo;
     line-height: 40px;
 }
 #About h1{
