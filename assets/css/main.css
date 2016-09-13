@@ -176,6 +176,7 @@ body {
 
 .rslides {
     margin-bottom: 20px !important;
+	margin-top: 4% !important;
 }
 
 .rslides1_nav {
@@ -228,8 +229,9 @@ body {
         font-family: Fertigo;
     line-height: 40px;
 }
-#About h1{
-	 
+h1{
+	    font-size: 45px;
+ 
 }
 #RoundedSec h1 {
 font-family: 'Tangerine', serif;
@@ -1670,6 +1672,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 @media screen and (max-width: 980px) {
+.sliderContainer{
+	width:80%;
+	margin-left:10%;
 
     h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
         display: none;
@@ -1679,16 +1684,46 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 1.75em;
 }
-
+.MainContainer{
+	    font-size: 2.2em;
+}
+.sliderContainer h1
+{
+	    font-size: 0.7em;
+}}
 @media screen and (max-width: 980px) {
-
+	.prev {
+		left:6%;
+	}
+	.next {
+    right: 6%;
+}
+	.rslides1_nav {
+    border-radius: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4px;
+    padding-right: 20px;
+    padding-left: 19px;
+    margin-bottom: 20px !important;
+    font-size: 25px;
+    top: 5px;
+    position: absolute;}
+	
+.sliderContainer{
+	width:80%;
+	margin-left:10%;
+}
     h1 {
         font-size: 1.5em;
     }
 }
 
 @media screen and (max-width: 736px) {
-
+.sliderContainer{
+	width:80%;
+	margin-left:10%;
+}
     h1 {
         font-size: 1.25em;
     }
@@ -1699,7 +1734,10 @@ h2 {
 }
 
 @media screen and (max-width: 736px) {
-
+.sliderContainer{
+	width:80%;
+	margin-left:10%;
+}
     h2 {
         font-size: 1em;
     }
@@ -2160,7 +2198,7 @@ ul {
 }
 
     ul li {
-        padding-left: 0.5em;
+      
         list-style: none;
         /* width: 100% !important; */
     }
