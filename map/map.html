@@ -301,8 +301,10 @@
             handleLocationError(true, infoWindow, map.getCenter());
           });
         } else {
+		alert("error on geo");
           // Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
+		
         }
       
                                 setTimeout(function () {
