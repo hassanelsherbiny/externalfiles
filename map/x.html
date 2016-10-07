@@ -33,7 +33,7 @@
 
 
 
-
+<button type="button">Get Current Loc</button>
 
                 <div id="header">
                     <div class="col-lg-1 col-md-1 col-sm-9 col-xs-9 ">
@@ -288,7 +288,23 @@
                         $(geoloccontrol.element).on("click", (function () {
                             console.log("from click : " + OnGetLoc);
                             if (!OnGetLoc) {
-							if (navigator.geolocation) {
+							
+      getloc();
+                                setTimeout(function () {
+                                    OnGetLoc = true;
+                                }, 2000);
+                            }
+
+
+                        }));
+                 
+                    });
+                    // loadScript();
+                    // initMap();
+	alert("new index");
+               
+function getloc(){
+if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
               lat: position.coords.latitude,
@@ -306,20 +322,8 @@
           handleLocationError(false, infoWindow, map.getCenter());
 		
         }
-      
-                                setTimeout(function () {
-                                    OnGetLoc = true;
-                                }, 2000);
-                            }
-
-
-                        }));
-                 
-                    });
-                    // loadScript();
-                    // initMap();
-	alert("new index");
-                </script>
+}
+			   </script>
 
             
 <div class="aspNetHidden">
