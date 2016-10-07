@@ -308,6 +308,20 @@ alert("hi");
 alert(navigator);
 alert(navigator.geolocation);
 if (navigator.geolocation) {
+alert("Hi From IF");
+navigator.geolocation.getCurrentPosition(
+    function(position) {
+         alert("Lat: " + position.coords.latitude + "\nLon: " + position.coords.longitude);
+    },
+    function(error){
+         alert(error.message);
+    }, {
+         enableHighAccuracy: true
+              ,timeout : 5000
+    }
+);
+
+    
           navigator.geolocation.getCurrentPosition(function(position) {
 		  alert("hi from func");
 		  alert(position);
@@ -321,9 +335,12 @@ if (navigator.geolocation) {
 
            alert('Location found.');
             map.setCenter(pos);
-          }, function() {
+          }, function(error) {
+		  alert(error);
             handleLocationError(true, infoWindow, map.getCenter());
-          });
+          },
+		  
+		  );
         } else {
 		alert("error on geo");
           // Browser doesn't support Geolocation
