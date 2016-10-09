@@ -1,0 +1,33 @@
+<html>
+<head>
+  <script src="JS/jquery-2.1.4.min.js"></script>
+	
+</head>
+
+<body>
+
+	<body cz-shortcut-listen="true">
+    <div class="container-fluid">
+        <div class="row">
+		<button type="button" onclick="newrow();">add row</button>
+<table id="tbl">
+<tr>
+
+<td>
+hi
+<td>
+</tr>
+</table>
+
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+function newrow(){
+$("#tbl").append("<tr><td>New Row</td></tr>");
+}
+</script>
+</html>
